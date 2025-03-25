@@ -1,6 +1,4 @@
 import { useRole } from "@/context/RoleContext";
-import React from "react";
-
 const RoleView = () => {
   const { changeRole, user} = useRole();
   return (

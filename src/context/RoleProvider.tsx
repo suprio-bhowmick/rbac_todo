@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, ReactNode, useEffect } from "react";
+import { useState, ReactNode, useEffect } from "react";
 import { ThemeContext } from "./RoleContext";
 import { AppAbility, defineAbilityFor } from "@/lib/ability";
 import { Ability } from "@casl/ability";
