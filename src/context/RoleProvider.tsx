@@ -28,7 +28,7 @@ function AuthProvider({ children }: AuthProviderProps) {
   }, [user]);
 
   const changeRole = (role: string) => {
-    let newRole = {
+    const newRole = {
       name: role.toUpperCase(),
       role: role,
     };

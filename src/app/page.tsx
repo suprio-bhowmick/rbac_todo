@@ -18,7 +18,7 @@ const TodoPage = () => {
 
   const handleAddTodo = () => {
     if (currentTodo.trim().length !== 0) {
-      let newTodo = {
+      const newTodo = {
         id: Date.now() + Math.floor(Math.random() * 100),
         task: currentTodo,
         isCompleted: false,
@@ -38,7 +38,7 @@ const TodoPage = () => {
   };
 
   const handleDelete = (id: number) => {
-    let updatedTodos = todos.filter((todo) => todo.id !== id);
+    const updatedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
   };
 
